@@ -138,3 +138,15 @@ private:
         while (currentNode != NULL)
         {
             cout << ++i << ". " << currentNode->noMhs << " " << endl;
+            // Step 3: Move to next node
+            currentNode = currentNode->next;
+        }
+    }
+
+    void revtraverse()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
